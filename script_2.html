@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let length = 16;
+        let weigth = 7.5;
+
+        let color = "yellow";
+        let lastName = "jae";
+
+        const person = {
+            fistName: "kimjaeYoung",
+            lastName:"kim",
+            br:"<br>",
+            age:28
+        };
+        // 객체 Objects
+
+        const car = ["BMW","캐스퍼","볼보"];
+        // 배열 (Arrays)
+
+        const date = new Date();
+        const year = date.getFullYear(); //년도
+        const month = date.getMonth(); // 월
+        const today = date.getDate(); // 날짜
+        const day = date.getDay(); //요일
+
+        const targetDate = new Date("2025-12-25");
+
+        const difDay = date - targetDate;
+
+        document.write(difDay);
+
+
+
+
+        document.write(date+"<br>");
+        // year , month , day , hour , minute , second , millisecond
+        document.write("<hr>");
+        document.write("현재년도:"+year);
+        document.write("<hr>");
+        document.write("현재월:"+month);
+        document.write("<hr>");
+        document.write("오늘날짜:"+today);
+        document.write("<hr>");
+        document.write("오늘요일:"+day);
+        
+        document.write("<hr>");
+        const weekDay = ["일","월","화","수","목","금","토"];
+
+        const totoday = weekDay[day];
+
+        document.write(totoday);
+
+        
+
+        // let x = length + 6 + color +10;
+        // document.write(x+"<br>");
+
+        // document.write(car[0]+"<br>");
+        // document.write(person.lastName+person.fistName+person.br+person.age);
+
+        // const week = ["일","월","화","수","목","금","토"];
+
+        // document.write("오늘의 요일은 : " + week[2]+person.br);
+
+        
+    </script>
+</body>
+</html>
