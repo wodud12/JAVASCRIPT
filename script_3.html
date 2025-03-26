@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">여러분들이 너무 잘해서 좋아요:)</p>
+    <script>
+        // let today = new Date();
+        // let hour = today.getHours();
+        
+        // if(hour < 12){
+        //     alert("아침입니다.");
+        // } else if(hour < 20) {
+        //     alert("오후입니다.");
+        // } else {
+        //     alert("잘자요!.");
+        // }
+        
+
+        // const now = new Date();
+        // const hours = now.getHours();
+        // const minutes = now.getMinutes();
+
+        // if((hours === 10 && minutes >= 0) || (hours === 11) || (hours === 12 && minutes < 50)){
+        //     alert("지금은 공부하는 시간입니다.");
+        // } else if(hour === 12 && minutes >=50) {
+        //     alert("지금은 점심시간입니다!");
+        // } else {
+        //     alert("지금은 공부하는 시간입니다!.");
+        // }
+
+        // 10시~12시 50분까지는 공부하는 시간입니다.
+        // 12시50분이 되면 점심시간이고,
+        // 나머지 시간은 잠을 안자고 공부하는 시간입니다.
+       
+        //  hours === 10 && minutes >= 0 -> 10시0분~59분까지
+        //  hours === 11 -> 11시 몇분이든 다 공부하는 시간
+        //  hours === 12 && minutes >=50 -> 12시 49분까지 공부시간
+
+
+        // const score = Number(prompt("점수입력"));
+        // if(score >= 90 ) {
+        //     document.write("A학점 입니다!");
+        // } else if(score >= 80 ){
+        //     document.write("B학점 입니다!");
+        // } else if(score >= 70 ){
+        //     document.write("C학점 입니다!");
+        // } else if(score >= 60 ){
+        //     document.write("D학점 입니다!");
+        // } else {
+        //     document.write("F학점 입니다!");
+        // }
+
+//         const num1 = Number(prompt("첫 번째 숫자를 입력하세요:"));
+//         const num2 = Number(prompt("두 번째 숫자를 입력하세요:"));
+//         const num3 = Number(prompt("세 번째 숫자를 입력하세요:"));
+//         let max = num1; // 처음에는 첫 번째 숫자가 가장 크다고 가정
+//         if (num2 > max) {
+//             max = num2; // num2가 더 크면 max를 num2로 변경
+//         }
+//         if (num3 > max) {
+//             max = num3; // num3가 더 크면 max를 num3로 변경
+//         }
+//         alert("가장 큰 숫자는 " + max + " 입니다!");
+
+
+
+//          const age = prompt("나이를 입력하세요");
+
+//          if(age <= 7){
+//              document.write("무료입니다!");
+//          } else if(age >= 8 && age <= 18){
+//              document.write("청소년 요금은 500원입니다!");
+//          } else if(age >= 19 && age <= 64){
+//              document.write("성인요금은 1000원입니다!");
+//          } else{
+//              document.write("무료입니다!")
+//          }
+
+
+
+//          const age = prompt("몇살이신가요");
+
+//          if (age >= 18) {
+//              document.write("입장가능합니다!");
+//          } else if(age >= 13){
+//              document.write("보호자 동반이 필요합니다!");
+//          } else {
+//              document.write("입장할 수 없습니다!");
+//          }
+
+
+//          const balance = Number(prompt("현재 잔액을 입력하세요:"));
+//         const withdraw = Number(prompt("출금할 금액을 입력하세요:"));
+//         if (withdraw > balance) {
+//             alert("잔액이 부족합니다!");
+//         } else {
+//             alert("출금이 완료되었습니다! 남은 잔액: " + (balance - withdraw) + "원");
+//         }
+
+
+        
+        // const num = prompt("숫자");
+
+        // if(num %2 === 0){
+        //     alert("짝수입니다.")
+        // } else{
+        //     alert("홀수입니다.")
+        // }
+           
+
+
+
+
+
+        // 문제 2. 할인 적용 가격 계산
+        // 요구사항:
+        // 물건 가격(price)과 구매 수량(quantity)을 입력받아 총 금액을 계산하세요.
+        // 수량이 10개 이상이면 10% 할인을 적용하세요.
+
+        let price = 5000; // 단가
+        let quantity = 15; // 수량
+        let total = price * quantity;
+
+        if(quantity >= 10){
+            total = total * 0.9; // 10% 할인
+        }
+        document.write(`총 금액 : ${total}원`);
+        
+        
+
+
+
+        //  const month = (prompt("계절을 출력하세요"));
+
+        // if (month <= 5) {
+        //     document.write("봄");
+        // } else if(month <= 8){
+        //     document.write("여름");
+        // } else if(month <= 11){
+        //     document.write("가을");
+        // } else if (month >= 12) {
+        //     document.write("겨울");
+        // }
+
+
+
+
+
+
+        
+
+
+
+
+        
+        
+        
+
+
+        
+        
+        
+
+    </script>
+</body>
+</html>
