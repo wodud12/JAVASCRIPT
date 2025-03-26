@@ -93,33 +93,25 @@
 //          }
 
 
-//          const balance = Number(prompt("현재 잔액을 입력하세요:"));
-//         const withdraw = Number(prompt("출금할 금액을 입력하세요:"));
-//         if (withdraw > balance) {
-//             alert("잔액이 부족합니다!");
-//         } else {
-//             alert("출금이 완료되었습니다! 남은 잔액: " + (balance - withdraw) + "원");
-//         }
+        const balance = Number(prompt("현재 잔액을 입력하세요:"));
+        const withdraw = Number(prompt("출금할 금액을 입력하세요:"));
+        if (withdraw > balance) {
+            alert("잔액이 부족합니다!");
+        } else {
+            alert("출금이 완료되었습니다! 남은 잔액: " + (balance - withdraw) + "원");
+        }
 
 
         
-        // const num = prompt("숫자");
+         const num = prompt("숫자");
 
-        // if(num %2 === 0){
-        //     alert("짝수입니다.")
-        // } else{
-        //     alert("홀수입니다.")
-        // }
+         if(num %2 === 0){
+             alert("짝수입니다.")
+         } else{
+             alert("홀수입니다.")
+         }
            
 
-
-
-
-
-        // 문제 2. 할인 적용 가격 계산
-        // 요구사항:
-        // 물건 가격(price)과 구매 수량(quantity)을 입력받아 총 금액을 계산하세요.
-        // 수량이 10개 이상이면 10% 할인을 적용하세요.
 
         let price = 5000; // 단가
         let quantity = 15; // 수량
@@ -129,23 +121,26 @@
             total = total * 0.9; // 10% 할인
         }
         document.write(`총 금액 : ${total}원`);
+        document.write("총 금액 :" + total + "원");
         
         
 
 
 
-        //  const month = (prompt("계절을 출력하세요"));
-
-        // if (month <= 5) {
-        //     document.write("봄");
-        // } else if(month <= 8){
-        //     document.write("여름");
-        // } else if(month <= 11){
-        //     document.write("가을");
-        // } else if (month >= 12) {
-        //     document.write("겨울");
-        // }
-
+        let month = 7; // 예시 입력
+        let season;
+        if (month >= 3 && month <= 5) {
+        season = "봄";
+        }
+        if (month >= 6 && month <= 8) {
+        season = "여름";
+        }
+        if (month >= 9 && month <= 11) {
+        season = "가을";
+        }
+        if (month === 12 || month === 1 || month === 2) {
+        season = "겨울";
+        }
 
 
 
