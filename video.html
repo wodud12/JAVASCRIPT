@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .kv{
+            width: 100%;
+            overflow: hidden;
+            height: 830px;
+            position: relative;
+        }
+        .video__bg{
+            position: absolute;
+         
+        }
+        .kv__video{
+            position: absolute;
+            width: 100vw;
+        }
+        .kv__title{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255,255,255,0.3);
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <section class="kv">
+        <div class="video__bg">
+            <video autoplay muted loop poster="" class="kv__video">
+                <source src="assets/videoplayback.mp4" type="video/mp4"></source>
+            </video>
+        </div>
+        <div class="kv__title">
+            <h2>내가 사라져 볼게 얍!!!</h2>
+        </div>
+    </section> -->
+
+    <audio autoplay controls loop class="audio">
+        <source src="assets/crazy-chase-126687.mp3">
+    </audio>
+</body>
+</html>

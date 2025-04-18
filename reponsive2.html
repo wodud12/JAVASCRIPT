@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fbd3be5767.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/xeicon/2/xeicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <i class="xi-home"></i>
+            <a href="#">MadWebsite</a>
+        </div>
+        <ul class="navbar__menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Bookings</a></li>
+        </ul>
+        <ul class="navbar__icons">
+            <li><i class="xi-facebook-official"></i></li>
+        </ul>
+        <a href="#" class="navbar__toggleBtn"></a>
+        <i class="xi-bars"></i>
+    </nav>
+    <script>
+        const toggleBtn = document.querySelector('.navbar_toogleBtn');
+        const menu = document.querySelector('.navbar__menu');
+        const icons = document.querySelector('.navbar__icons');
+
+        toggleBtn.addEventListener('cilck',()=>{
+            menu.classList.toggle('active');
+            icons.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0;
+            color: blue;
+            gap: 0 30px;
+        }
+        header{
+            background-color: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+            transition: background .3s;
+        }
+        header.fixed{
+            background-color: aqua;
+        }
+        .background-on{
+            background-color: blue;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        section{
+            height: 100vh;
+        }
+        #sec01{
+            background-color: antiquewhite;
+        }
+        #sec02{
+            background-color: paleturquoise;
+        }
+        #sec03{
+            background-color: burlywood;
+        }
+        #sec04{
+            background-color: yellowgreen;
+        }
+        #sec05{
+            background-color: beige;
+        }
+
+        /* background color */
+        .bg-sec01{background-color: olive;}
+        .bg-sec02{background-color: salmon;}
+        .bg-sec03{background-color: skyblue;}
+        .bg-sec04{background-color: sienna;}
+        .bg-sec05{background-color: violet;}
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="sec01">sec01</a></li>
+            <li><a href="sec02">sec02</a></li>
+            <li><a href="sec03">sec03</a></li>
+            <li><a href="sec04">sec04</a></li>
+            <li><a href="sec05">sec05</a></li>
+        </ul>
+    </header>
+    <section id="sec01"></section>
+    <section id="sec02"></section>
+    <section id="sec03"></section>
+    <section id="sec04"></section>
+    <section id="sec05"></section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            const scrollY = $(this).scrollTop();
+            console.log('현재 스크롤:',scrollY);
+
+            if(scrollY > 100){
+                $('header').fadeIn();
+            } else{
+                $('header').fadeOut();
+            }
+        })
+    </script>
+</body>
+</html>

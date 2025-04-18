@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 100px;height: 100px;}
+        .box1{background: yellow; position: absolute;}
+        .box2{background: yellowgreen;}
+        .box3{background: palevioletred;}
+    </style>
+</head>
+<body>
+    <button>Click!</button>
+    <ul class="list">
+        <li>hello</li>
+        <li>나는 두번째 임</li>
+        <li>근데 어쩌라고</li>
+    </ul>
+    <!-- <div class="box box1"></div> -->
+    <!-- <div class="box box2"></div> -->
+    <!-- <div class="box box3"></div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+
+        $(function(){
+            $('button').click(function(){
+                $('li').prepend("그냥 그렇다고");
+                // $('.list').append("<li>그냥 그렇다고=")
+                // append 추가 어디에? - 마지막 요소 -
+            });
+        })
+
+
+
+
+
+        // $(Document).ready(function(){
+        //     $("button").click(function(){
+        //         $('.box1').animate({
+        //             left:'+=250px',
+        //             width: '300px',
+        //             height: '300px',
+        //             opacity:'0.5'})
+        //         })
+        //     })
+
+        
+        
+
+
+        // $('.box1').fadeIn();
+        // $('.box2').fadeIn("slow");
+        // $('.box3').fadeIn(3000);
+        </script>
+</body>
+</html>

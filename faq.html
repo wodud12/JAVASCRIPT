@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        .faq{
+            width: 480px;
+            border-bottom: 1px solid #c4c4c4;
+        } 
+        .faq h3{
+            background: #e9e7e7;
+            margin: 0;
+            padding: 7px 15px;
+            border: 1px solid #c4c4c4;
+            border-bottom: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .faq p{
+            background: #f7f7f7;
+            margin: 0;
+            padding: 10px 15px 20px;
+            border-left: 1px solid #c4c4c4;
+            border-right: 1px solid #c4c4c4;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="faq">
+        <h3>Question One Sample Text</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut officiis ut aliquam porro facere eum maiores dolore optio dolorum minima, totam et rem doloremque iure officia doloribus. Magni, doloribus quos?</p>
+        <h3>Question One Sample Text</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut officiis ut aliquam porro facere eum maiores dolore optio dolorum minima, totam et rem doloremque iure officia doloribus. Magni, doloribus quos?</p>
+        <h3>Question One Sample Text</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut officiis ut aliquam porro facere eum maiores dolore optio dolorum minima, totam et rem doloremque iure officia doloribus. Magni, doloribus quos?</p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.faq p').hide();
+            $('.faq h3').click(function(){
+                $(this).next('p').slideToggle('slow').siblings('p:visible').slideUp('slow');
+            })
+        })
+    </script>
+</body>
+</html>
